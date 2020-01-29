@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>资料整理</title>
+    <meta name="description" content="">
+    
+    
+    <link rel="preload" href="/book/assets/css/0.styles.569be68c.css" as="style"><link rel="preload" href="/book/assets/js/app.185519f5.js" as="script"><link rel="preload" href="/book/assets/js/2.42f270c0.js" as="script"><link rel="preload" href="/book/assets/js/7.10ea7b90.js" as="script"><link rel="prefetch" href="/book/assets/js/10.97bffedb.js"><link rel="prefetch" href="/book/assets/js/11.5fdfde0f.js"><link rel="prefetch" href="/book/assets/js/12.063b04b6.js"><link rel="prefetch" href="/book/assets/js/13.bd29dce9.js"><link rel="prefetch" href="/book/assets/js/14.1ab4b124.js"><link rel="prefetch" href="/book/assets/js/15.ab02c2a4.js"><link rel="prefetch" href="/book/assets/js/16.4604dc64.js"><link rel="prefetch" href="/book/assets/js/17.a00c58d0.js"><link rel="prefetch" href="/book/assets/js/18.8b9d9416.js"><link rel="prefetch" href="/book/assets/js/19.a36670e4.js"><link rel="prefetch" href="/book/assets/js/20.2bd0109f.js"><link rel="prefetch" href="/book/assets/js/21.29ce6735.js"><link rel="prefetch" href="/book/assets/js/3.9f6d9071.js"><link rel="prefetch" href="/book/assets/js/4.3ff2fe10.js"><link rel="prefetch" href="/book/assets/js/5.4c5d2735.js"><link rel="prefetch" href="/book/assets/js/6.e01a5301.js"><link rel="prefetch" href="/book/assets/js/8.063a4d03.js"><link rel="prefetch" href="/book/assets/js/9.e23ffd6f.js">
+    <link rel="stylesheet" href="/book/assets/css/0.styles.569be68c.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/book/" class="home-link router-link-active"><!----> <span class="site-name">资料整理</span></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/book/html/" class="sidebar-link">html</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>js</span> <span class="arrow right"></span></p> <!----></section></li><li><a href="/book/es6/" class="sidebar-link">es6</a></li><li><a href="/book/css/" class="active sidebar-link">css</a></li><li><a href="/book/angular/" class="sidebar-link">angular</a></li><li><a href="/book/rxjs/" class="sidebar-link">rxjs</a></li><li><a href="/book/git/" class="sidebar-link">git</a></li><li><a href="/book/webpack/" class="sidebar-link">webpack,gulp,grunt</a></li><li><a href="/book/gof/" class="sidebar-link">design patterns</a></li><li><a href="/book/nodejs/" class="sidebar-link">nodejs</a></li><li><a href="/book/linux/base.html" class="sidebar-link">shell</a></li><li><section class="sidebar-group collapsable depth-0"><p class="sidebar-heading"><span>vue</span> <span class="arrow right"></span></p> <!----></section></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><ul><li>HTML4基于SGML(更古老), 要写DTD<br>
+HTML5不基于SGML, 不需要写DTD, 到时要用Doctype来约束浏览器的行为</li> <li>@import是css语法, link是HTML标签,<br>
+@import在页面加载完成加载,<br>
+link没有兼容性问题, @import css2.1+<br>
+link引入的样式权重大鱼@import<br>
+*FOOC 文档样式短暂失效<br>
+原因: 样式加载在html加载之后<br>
+解决: 把样式放在head中<br>
+清楚浮动<br>
+clear:both-&gt; 增加无意义的标签<br>
+overflow: hidden-&gt; 隐藏超出部分<br>
+:after-&gt;推荐使用<br>
+父元素设置高度<br>
+overflow:auto-&gt;浏览器会自动设置高度,必须定义width,不能定义height, 会产生滚动条</li></ul> <h5 id="css3"><a href="#css3" class="header-anchor">#</a> css3</h5> <p>text-shadow, 渐变, border-radius, box-shadow, box-sizing, transition ,<br>
+animation, @viewport 媒体查询, tansform, 2D, 3D转换</p> <ul><li>标签盒子  宽高=内容区<br>
+IE盒子  宽高 = 内容+border+内边距<br>
+box-sizing: 宽高 = 内边距+border+内容</li> <li>important &gt;内敛&gt; id &gt; class &gt; 元素 = 伪元素</li> <li>display:inline-block  不显示间隙</li></ul> <ol><li>子元素写在一行</li> <li>父元素的font-size设置为0</li></ol> <ul><li><p>::before  这种写法是css3为了区分为元素和伪类设置<br>
+:hover 伪类</p></li> <li><p>用偶数字体多<br>
+ie6会把13px字体渲染成14px</p></li></ul> <h5 id="选择器权重"><a href="#选择器权重" class="header-anchor">#</a> 选择器权重</h5> <p>important  10000<br>
+内敛  1000<br>
+id 100<br>
+类  10  伪类  属性<br>
+元素  1<br>
+通用*  0</p> <ul><li>flex</li></ul> <div class="language-css extra-class"><pre class="language-css"><code>flex-direction
+flex-wrap 换行
+flex-flow
+justify-content
+align-items  交叉轴对齐
+align-content 多根轴线对齐
+</code></pre></div><div class="language-css extra-class"><pre class="language-css"><code>flex-grow  放大
+flex-shrink  缩小
+<span class="token property">flex-basis</span><span class="token punctuation">:</span> 350px
+<span class="token property">flex</span><span class="token punctuation">:</span> auto none  默认0 1 auto
+align-self  可覆盖aligin-items
+</code></pre></div><p>*grid<br>
+grid-template-rows  grid-template-columns<br>
+值是每一列/行的的宽</p> <ul><li>页面布局  三栏布局<br>
+float  flex  absolute table-cell  grid</li></ul></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/book/es6/" class="prev">es6</a></span> <span class="next"><a href="/book/angular/">angular</a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/book/assets/js/app.185519f5.js" defer></script><script src="/book/assets/js/2.42f270c0.js" defer></script><script src="/book/assets/js/7.10ea7b90.js" defer></script>
+  </body>
+</html>
